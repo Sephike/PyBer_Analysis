@@ -5,6 +5,7 @@
 ### Next was building a new DataFrame that indices "type" and "date" columns and sums the fare of those columns. Then we needed to reset the index of the new DataFrame. This is necessary to make the DataFrame into a pivot table. Creating the pivot table was simple, we made the index set to the date, columns seperated by city type, and the fare is the value based on city type. Once the pivot table was made we used it to make a new DataFrame. That only held a portion of the original data, because we limited the dataset from 2019-01-01 to 2019-04-29. After we limited the data we then resampled it to filter by week. This ended up with a weekly total of each city type.
 !["Weekly Fares by City Type"](Resources/weekly_total_fares_final.png)
 ### We then proceeded to plot the resampled data on a multiline graph.
+!["Weekly Fares by City Type Graphed"](analysis/PyBer_fare_summary.png)
 ## The Differences in the Metricts
 1. Total driver count, this can help to give an idea as to how many drivers a city type will need if you are interested in expanding into unknown areas.
 2. Total rides count, this will give a rough estimate as to how much demand a city type will have for rides.
